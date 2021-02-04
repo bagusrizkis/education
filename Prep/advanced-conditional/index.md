@@ -5,7 +5,7 @@
 
 # Advanced Conditional
 
-Materi ini sama seperti conditional tapi yang lebih mendalam (advanced)
+Materi ini sama seperti conditional tapi yang lebih tinggi atau mendalam (advanced)
 
 ---
 
@@ -52,7 +52,7 @@ sedangkan untuk memanipulasinya menggunakan **method**.
   - `substring(start, end)`
   - `substr(start, length)`
 
-Method pada string sangat banyak. Kalian bisa explore di dokumentasi MDN atau pada [W3Scholls](https://www.w3schools.com/js/js_string_methods.asp)
+Method pada string sangat banyak. Kalian bisa explore di dokumentasi MDN atau pada [W3Schools](https://www.w3schools.com/js/js_string_methods.asp)
 
 ---
 
@@ -76,7 +76,8 @@ A | R | M | E | N | I | A | N
 
   console.log(batch[1]) // output: r
   console.log(batch[0]) // output: a
-
+  
+  // jika ingin mendapat karakter terkahir
   console.log(batch[batch.length-1]) // output: n
   // note: length dimuali dari 1, index dimulai dari 0
   
@@ -86,8 +87,26 @@ A | R | M | E | N | I | A | N
 
 ## Nested Condition
 
-Dalam menjalankan kondisional, Javasctip melanjalanakn dari atas ke bawah:
+Dalam kondisional kita dapat menuliskan sebanyak mungkin turunnannya, seperti contoh berikut:
+```js
+if (exp 1) {
+  if (exp n) {
+    // 
+    if (exp n) {
+      // 
+    }
+  }
+} else {
+  if (exp n) {
+    // 
+    if (exp n) {
+      // 
+    }
+  }
+}
+```
 
+Dalam menjalankan kondisional, Javasctip melanjalanakn dari atas ke bawah:
 Jika pakai if-elseIf-else maka akan masuk ke satu kondisi saja dijalankan satu per satu
 dari paling atas `if` -> `else if` -> `else`. Kondisi akan berhenti (tidak lanjut
 menjalankan pengecekan) jika sudah sesuai yang diinginkan (expression bernilai `true`).
