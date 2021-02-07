@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
+    siteTitle: `Hacktiv8 Lecture Notes`,
+    defaultTitle: `Lecture Notes`,
+    siteTitleShort: `Lecture Notes`,
+    siteDescription: `Notes for Hacktiv8 student in phase preparation`,
     siteUrl: `https://rocketdocs.netlify.com`,
     siteAuthor: `@rocketseat`,
     siteImage: `/banner.png`,
@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocketseat Gatsby Themes`,
-        short_name: `RS Gatsby Themes`,
+        name: `Hacktiv8 Lecture Notes`,
+        short_name: `H8 Lecture`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
