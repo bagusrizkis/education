@@ -1,0 +1,192 @@
+---
+title: Advanced Conditional
+description: More Conditional (Nested, Math, and String).
+---
+
+| Flex: Week 1 Day 4 |
+| ------------------ |
+
+Materi ini sama seperti conditional tapi yang lebih tinggi atau mendalam (advanced)
+
+## String Property and Method
+
+Setiap string yang kita buat di bahasa javascript mempunyai
+informasi-informasi tambahan yang bisa ditampilkan. Selain
+itu juga ada beberapa functionality/fungsi untuk memanipulasinya.
+
+> ❗ Cara _memanggil informasi_ tersebut menggunakan **property**,
+> sedangkan jika untuk _memanipulasinya_ menggunakan **method**.
+
+- Contoh Property:
+
+  ```js
+  var batch = "armenian";
+
+  // mengetahui informasi panjang suatu string menggunakan '.length'
+  console.log(batch.length); // output: 8
+  ```
+
+- Contoh Method:
+
+  ```js
+  var batch = "armenian";
+
+  // mendapatkan sebagian isi dari string menggunakan `slice()`
+  console.log(batch.slice(0, 3)); // output: arm
+  ```
+
+  Untuk mengekstrak isi dari string dapat juga menggunakan:
+
+  - `slice(start, end)`
+  - `substring(start, end)`
+  - `substr(start, length)`
+
+> 🐣 Method ini disebut juga dengan builtin function yang dimana function ini adalah
+> bawaan javascript untuk memudahkan/mempercepat beberapa pekerjaan.
+
+Method pada string sangat banyak. Kalian bisa explore di dokumentasi MDN atau pada [W3Schools](https://www.w3schools.com/js/js_string_methods.asp).
+
+---
+
+## String Index
+
+> ❗ Setiap posisi karakter di string mempunyai indikator masing-masing
+> untuk mengaksesnya yang dinamakan **index**.
+
+| A   | R   | M   | E   | N   | I   | A   | N   |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+
+- Index di javascript selalu dimulai dari `0`.
+- Cara akses index di string yaitu dengan nomor yang diapit tanda `[` dan `]`
+- tanda `[]` harus berada setelah string yang akan diakses
+
+- Contoh:
+
+  ```js
+  var batch = "armenian";
+
+  console.log(batch[1]); // output: r
+  console.log(batch[0]); // output: a
+
+  // jika ingin mendapat karakter terkahir
+  console.log(batch[batch.length - 1]); // output: n
+  // note: length dimuali dari 1, index dimulai dari 0
+  ```
+
+---
+
+## Nested Condition
+
+Dalam kondisional kita dapat menuliskan sebanyak mungkin turunnannya, seperti contoh berikut:
+
+```js lineNumbers=true
+if (exp 1) {
+  if (exp n) {
+    //
+    if (exp n) {
+      //
+    }
+  }
+} else {
+  if (exp n) {
+    //
+    if (exp n) {
+      //
+    }
+  }
+}
+```
+
+Dalam menjalankan kondisional, Javasctip melanjalanakn dari atas ke bawah:
+Jika pakai if-elseIf-else maka akan masuk ke satu kondisi saja dijalankan satu per satu
+dari paling atas `if` -> `else if` -> `else`. Kondisi akan berhenti (tidak lanjut
+menjalankan pengecekan) jika sudah sesuai yang diinginkan (expression bernilai `true`).
+
+```js lineNumbers=true
+if (exp 1) {
+  // jika sudah masuk sini maka tidak akan dilanjutkan ke pengecekan selanjutnya (berhenti)
+} else if (exp 2) {
+  // jika diatasnya tidak lolos makan akan masuk,
+  // jika disini masuk maka tidak akan dilanjutkan ke pengecekan selanjutnya (berhenti)
+} else if (exp 3) {
+  // jika diatasnya tidak lolos makan akan masuk,
+  // jika disini masuk maka tidak akan dilanjutkan ke pengecekan selanjutnya (berhenti)
+} else {
+  // jika semua tidak lolos maka akan masuk ke sini
+}
+```
+
+Tapi jika menggunakan `if-if`. Maka kondisi akan terus berlajalan, walaupun if pertama
+sudah berhasil `true` atau expressionnya benar kondisi `if` berikutnya masih tetap
+memeriksa (bisa masuk jika `true`)
+
+```js lineNumbers=true
+if (true) {
+  // kondisi berjalan jika benar
+}
+
+if (true) {
+  // kondisi berjalan jika benar
+}
+
+if (true) {
+  // kondisi berjalan jika benar
+}
+```
+
+---
+
+## Math Function
+
+Math merupakan hal special dalam javascrip _(Math merupakan object - hiraukan dulu tentang object)_.
+Math memiliki banyak method. Contonya yaitu:
+
+1. `Math.floor(num)` - pembulatan ke bawah
+2. `Math.ceil(num)` - pembulatan ke atas
+3. `Math.round(num)` - pembulatan ke integer yang paling dekat
+4. `Math.random()` - generate random number diantara 0 **(inclusive)** - 1 **(not inclusive)**
+5. `Math.abs(num)` - membuat nilai absolute atau nilai mutlak
+
+Selain itu masih banyak method-method lainnya yang bisa dibuka di website [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+---
+
+## Switch Case
+
+Syntax pengkodisian (Conditional) yang melakukan pengecekan ekspresi (expression) dengan banyak kasus (case). Swith membutuhkan `break` untuk menghentikan pengecekan kasus / jalannya statement.
+
+- Syntax Switch Case:
+
+  ```js lineNumbers=true
+  switch (expression) {
+    case value1:
+      //Statement akan dieksekusi / dijalankan ketika expression sama (match) denan value1
+      break;
+    case valueN:
+      //Statement akan dieksekusi / dijalankan ketika expression sama (match) dengan value1
+      break;
+    default:
+      //Statements akan diajalankan ketika case-case diatas tidak ada yang cocok (match) dengan exression
+      break;
+  }
+  ```
+
+- contoh:
+  ```js lineNumbers=true
+  var lampu = 'merah'
+  swith (lampu) {
+    case 'merah':
+      console.log('MERAH: berhenti')  // ini akan ditampilkan
+      break
+    case 'hijau':
+      console.log('HIJAU: berjalan')
+      break
+    case 'kuning':
+      console.log('KUNING: pelan-pelan')
+      break
+    default:
+      console.log('lampu rusak')
+      break
+  }
+  ```

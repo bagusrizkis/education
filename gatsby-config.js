@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: `Lecture Notes`,
     siteTitleShort: `Lecture Notes`,
     siteDescription: `Notes for Hacktiv8 student in phase preparation`,
-    siteUrl: `https://rocketdocs.netlify.com`,
+    siteUrl: `https://prep.rizkis.dev/`,
     siteAuthor: `@rocketseat`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
@@ -17,8 +17,8 @@ module.exports = {
       options: {
         configPath: `src/config`,
         docsPath: `src/docs`,
-        githubUrl: `https://github.com/rocketseat/gatsby-themes`,
-        baseDir: `examples/gatsby-theme-docs`,
+        githubUrl: `https://github.com/bagusrizkis/lectureH8`,
+        baseDir: `/`,
       },
     },
     {

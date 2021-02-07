@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/theme-docs.svg" alt="A illustration of file that is the @rocketseat/gatsby-theme-docs logo" width="100">
+  <img src="./src/@rocketseat/gatsby-theme-docs/components/assets/h8-logo.png" alt="Hacktiv8 Logo" width="400" />
 </p>
 
 <h2 align="center">
-  Gatsby Starter: Rocket Docs
+  Hacktiv8 Lecture Notes
 </h2>
 
 <p align="center">
-  Out of the box Gatsby Starter for creating documentation websites easily and quickly. With support for MDX, code highlight, Analytics, SEO and more 🔥 Using the theme: <a href="https://github.com/Rocketseat/gatsby-themes/tree/master/%40rocketseat/gatsby-theme-docs">@rocketseat/gatsby-theme-docs</a>
+  Berisi catatan-catanan singkat tentang pembelajaran meteri di hacktiv8</a>
 </p>
 
 <p align="center">
@@ -15,46 +15,27 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%238257E6">
 
-  <a href="https://twitter.com/intent/follow?screen_name=rocketseat">
-    <img src="https://img.shields.io/twitter/follow/rocketseat.svg?label=Follow%20@rocketseat" alt="Follow @rocketseat" />
-  </a>
 </p>
 
-## 🚀 Features
+## ⚡️ Dev Guide
 
-- 📝 MDX for docs;
-- 🛣 Yaml-based sidebar navigation;
-- 📱 Responsive and mobile friendly;
-- 🖥 Code highlighting with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer) and [react-live](https://github.com/FormidableLabs/react-live) support;
-- 🥇 SEO (Sitemap, schema.org data, Open Graph and Twitter tags).
-- 📈 Google Analytics support;
-- 📄 Custom docs schema;
-- 🖱 Table of Contents;
-- ⚡️ Offline Support & WebApp Manifest;
-- and much more 🔥
-
-## ⚡️ Getting started
-
-1. Create the website.
+1. Clone this repo.
 
    ```sh
-   npx gatsby new rocket-docs https://github.com/rocketseat/gatsby-starter-rocket-docs
+   git clone https://github.com/bagusrizkis/lectureH8.git
    ```
 
 2. Start developing.
 
    ```sh
-   cd rocket-docs
    gatsby develop
+   # or
+   npm run start
    ```
 
 3. Are you ready for launch?
 
    Your site is now running at `http://localhost:8000`
-
-## 📄 Docs
-
-Looking for docs? Check our live demo and documentation [website](https://rocketdocs.netlify.com).
 
 ---
 
