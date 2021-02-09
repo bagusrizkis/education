@@ -2,44 +2,46 @@
 
 - label: " ⚡️ Introduction"
   link: "/"
-- label: Basic
-  items:
-    - label: "💻 Basic Cli"
-      link: "/basic/cli"
-    - label: "📌 Github - Assignment"
-      link: "/basic/git"
+# - label: Basic
+#   items:
+#     - label: "💻 Basic Cli"
+#       link: "/basic/cli"
+#     - label: "📌 Github - Assignment"
+#       link: "/basic/git"
 - label: "Conditional & Data Type"
   items:
     - label: "🪗 Advanced Conditional"
       link: "/conditional/advanced-conditional"
-- label: Loop & Iteration
+- label: "Loop & Iteration"
   items:
-    - label: "-"
-      link: "/#"
-- label: EcmaScript 6
-  items:
-    - label: "-"
-      link: "/#"
-- label: Function
-  items:
-    - label: "-"
-      link: "/#"
-- label: Array
-  items:
-    - label: "-"
-      link: "/#"
-- label: Modular Function
-  items:
-    - label: "-"
-      link: "/#"
-- label: Object
-  items:
-    - label: "-"
-      link: "/#"
-- label: Array Of Object
-  items:
-    - label: "-"
-      link: "/#"
+    - label: "➰ Pseudocode & Iteration"
+      link: "/loop/pseudocode-iteration"
+    - label: "➿ Nested Loop"
+      link: "/loop/nested-loop"
+# - label: EcmaScript 6
+#   items:
+#     - label: "-"
+#       link: "/#"
+# - label: Function
+#   items:
+#     - label: "-"
+#       link: "/#"
+# - label: Array
+#   items:
+#     - label: "-"
+#       link: "/#"
+# - label: Modular Function
+#   items:
+#     - label: "-"
+#       link: "/#"
+# - label: Object
+#   items:
+#     - label: "-"
+#       link: "/#"
+# - label: Array Of Object
+#   items:
+#     - label: "-"
+#       link: "/#"
 - label: 🌏 Community
   items:
     - label: "Github"

@@ -1,0 +1,174 @@
+---
+title: Nested Loop
+description: Iteration in javascript (for loop and while loop)
+---
+
+| Flex: Week 2 Day 2 |
+| ------------------ |
+
+## For-for
+
+Nested loop yaitu loop yang berada di dalam loop
+
+contohnya yaitu:
+
+```js
+for (var i = 0; i < 5; i++) {
+  // outer loop
+  // statement di luar
+  for (var j = 0; j < 3; j++) {
+    // inner loop
+    // statement di dalam
+  }
+}
+```
+
+proses berjalannya yaitu statement yang di loop dalam akan berjalan sebanyak loop yang didalam dan akan diulangi sebanyak loop yang diluar
+
+Jika di statement kita beri perintah log maka yang akan terjadi yaitu:
+
+```js highlight={2,4}
+for (var i = 0; i < 5; i++) {
+  console.log(i + " ------------------");
+  for (var j = 0; j < 3; j++) {
+    console.log("dari loop dalam " + j);
+  }
+}
+```
+
+outputnya menjadi:
+
+```bash
+0 ------------------
+dari loop dalam 0
+dari loop dalam 1
+dari loop dalam 2
+1 ------------------
+dari loop dalam 0
+dari loop dalam 1
+dari loop dalam 2
+2 ------------------
+dari loop dalam 0
+dari loop dalam 1
+dari loop dalam 2
+3 ------------------
+dari loop dalam 0
+dari loop dalam 1
+dari loop dalam 2
+4 ------------------
+dari loop dalam 0
+dari loop dalam 1
+dari loop dalam 2
+```
+
+## Break
+
+Break digunakan untuk **menghentikan loop** secara paksa walaupun kondisi exit pointnya belum terpenuhi (walaupun condition nya masih berniali true)
+
+contoh tanpa break:
+
+```js
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+```
+
+outpunya:
+
+```bash
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+Jika memakai break saat i nya yaitu 3:
+
+```js highlight={3-5}
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+  if (i === 3) {
+    break;
+  }
+}
+```
+
+outpunya menjadi:
+
+```bash
+0
+1
+2
+3
+```
+
+## Horizontal output
+
+Jika kamu menggunakan `console.log()` maka akan menampilkan secara vertial atau akan berganti line setiap console baru. Bagaimana jika ingin menampilkan secara horinzontal (dalam satu line)?
+Kamu bisa menggunakan variabel bantuan untuk menyimpannya:
+
+Permisalan suatu kasus. Buatlah `****` (satu baris) dengan loop dari variable `num` dan `symbol`
+
+```js
+var num = 4
+var symbol = '*'
+
+for (let i = 0; i < num; i++) {
+  console.log(*)
+}
+```
+
+outpunya masih bertikal/ pindah baris:
+
+```bash
+*
+*
+*
+*
+```
+
+Oleh karena itu kita simpan ke variable dulu, dan ditampilkan setelah loop(yang statemenya menambahkan string) selesai:
+
+```js highlight={4,6,8}
+var num = 4;
+var symbol = "*";
+
+var temp = "";
+for (let i = 0; i < num; i++) {
+  temp += symbol;
+}
+console.log(temp);
+```
+
+outputnya menjadi:
+
+```bash
+*****
+```
+
+## Latihan
+
+Disediakan num = 4
+Kamu disuruh membuat asteriks dengan output:
+
+```bash
+****
+****
+****
+****
+```
+
+setelah itu kamu modifikasi agak menjadi:
+
+```bash
+****
+*  *
+*  *
+****
+```
