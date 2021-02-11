@@ -1,28 +1,33 @@
+<!--
 <p align="center">
   <img src="./src/@rocketseat/gatsby-theme-docs/components/assets/h8-logo.png" alt="Hacktiv8 Logo" width="400" />
 </p>
-
+--!>
+<!--
 <h2 align="center">
   Hacktiv8 Lecture Notes
 </h2>
-
+-->
+<!--
 <p align="center">
   Berisi catatan-catanan singkat tentang pembelajaran meteri di hacktiv8</a>
 </p>
-
+-->
+<!--
 <p align="center">
   <img src="https://img.shields.io/badge/PRs-welcome-%238257E6.svg" alt="PRs welcome!" />
-
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%238257E6">
-
 </p>
+-->
 
-## ⚡️ Dev Guide
+
+## ⚡️ Guide
 
 1. Clone this repo.
 
    ```sh
-   git clone https://github.com/bagusrizkis/lectureH8.git
+   git clone https://github.com/bagusrizkis/education.git education
+   cd education
    ```
 
 2. Start developing.
